@@ -16,19 +16,20 @@ Delete your task if you don't need it anymore
 it is a fullstack project using node.js and express for backend side and react for frontend side 
 
 ## backend 
-you can use apis without using frontend interface
+1- node.js with Express
+2- Database MongoDb
+3- you can use apis without using frontend interface -> API EndPoints :
+- **GET /tasks** = http://localhost:5000/tasks 
+- **POST /tasks** = http://localhost:5000/tasks 
+- **PUT /tasks/:id** = http://localhost:5000/tasks/1
+- **DELETE /tasks/:id** = http://localhost:5000/tasks/1
 
-**GET /tasks** = http://localhost:5000/tasks 
-**POST /tasks** = http://localhost:5000/tasks 
-**PUT /tasks/:id** = http://localhost:5000/tasks/1
-**DELETE /tasks/:id** = http://localhost:5000/tasks/1
-
-**Task Model** 
-_id : unique identifier 
-title : short title for task required (string) 
-description : optional description for your task (string)
-completed : boolean to indicate if the task is completed (boolean) default false 
-created_at : timestamp when the task was created (timestamp)
+**Task Model** :
+- `_id` : unique identifier 
+- `title` : short title for task required (string) 
+- `description` : optional description for your task (string)
+- `completed` : boolean to indicate if the task is completed (boolean) default false 
+- `created_at` : timestamp when the task was created (timestamp)
 
 ## Frontend 
 **React** to provide a familier user interface 
@@ -43,21 +44,20 @@ created_at : timestamp when the task was created (timestamp)
 **Backend** setup Node.js and express 
 git clone https://github.com/rawannabil/taskManagerList
 
-**backend**
-1-cd task-manager-backend
-2-npm install
-3-npm install cors
-4-npm start 
-the server will be running on http://localhost:5000
+**backend** :
+- cd task-manager-backend
+- npm install
+- npm install cors
+- npm start 
+- the server will be running on http://localhost:5000
 
-**frontend**
-in new terminal 
-cd task-manager-frontend
-npm install
-npm install bootstrap
-npm install react-router-dom
-npm start
-the frontend interface will be running on http://localhost:3000
+**frontend** in new terminal :
+- cd task-manager-frontend
+- npm install
+- npm install bootstrap
+- npm install react-router-dom
+- npm start
+- the frontend interface will be running on http://localhost:3000
 
 
 
